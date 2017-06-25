@@ -6,10 +6,10 @@ title: Read, Learn and Think
 <div id="home">
     <h1> Blog Posts</h1>
     <ul class="post">
-        {% for post in site.posts do %}
+        {% for post in site.posts %}
         <li>
             {{post.date}} <a href="{{post.url}}"> {{post.title}}</a>
         </li>
-        {% endfor%}
+        {% endfor %}
     </ul>
 </div>
