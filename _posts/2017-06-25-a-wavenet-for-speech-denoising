@@ -1,9 +1,13 @@
-# [arxiv:1706.07162] A WaveNet for Speech Denoising
-
+---
+layout: post
+title:  "A WaveNet for Speech Denoising"
+date:   2017-06-25 16:16:01 -0600
+categories: autoregressive models; speech denoising;
+---
 This paper presents a way to use neural network for a particular problem: speech denoising.
 > Speech denoisng techniques aim to improve the intelligibility and the overall perceptual quality of speech signals with intrusive background noise.
 
-## What are good points
+# What are good points
 
 * It advocates for learning and predicting on the raw audio, because working on the spectrogram loses the information, such as phase and timbre.
 
