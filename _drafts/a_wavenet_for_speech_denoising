@@ -1,0 +1,22 @@
+# [arxiv:1706.07162] A WaveNet for Speech Denoising
+
+This paper presents a way to use neural network for a particular problem: speech denoising.
+> Speech denoisng techniques aim to improve the intelligibility and the overall perceptual quality of speech signals with intrusive background noise.
+
+## What are good points
+
+* It advocates for learning and predicting on the raw audio, because working on the spectrogram loses the information, such as phase and timbre.
+
+* There are a bunch of modifications proposed to adapt WaveNet for the speech denoising problem:
+
+** Non-causality. We can access future information or latency can be afforded.
+
+** Real-value prediction. No longer predicting softmax or distribution.
+
+** L1 losses on noise and speech. $L(\hat{s) = |s - \hat{s}| + |b - \hat{b}|$. This is actually a very strong loss term.
+
+** Larger receptive field on the head to prevent disruption.
+
+** Predicting several samples at one time.
+
+** Noise-only data augmentation
